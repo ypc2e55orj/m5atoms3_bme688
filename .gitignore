@@ -1,0 +1,6 @@
+build
+cmake-build-debug
+managed_components
+.vscode/settings.json
+.cache
+sdkconfig.old

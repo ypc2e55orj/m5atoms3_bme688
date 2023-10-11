@@ -1,0 +1,10 @@
+dependencies:
+  idf: ">=5.1"
+
+  M5Unified:
+    version: develop
+    git: https://github.com/m5stack/M5Unified.git
+
+  M5GFX:
+    version: develop
+    git: https://github.com/m5stack/M5GFX.git
