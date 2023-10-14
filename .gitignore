@@ -1,6 +1,12 @@
-build
-cmake-build-debug
-managed_components
-.vscode/settings.json
-.cache
+# idf.py
 sdkconfig.old
+build
+managed_components
+
+# CLion
+cmake-build-*
+.idea
+
+# VSCode
+.vscode
+.cache
