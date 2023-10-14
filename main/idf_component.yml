@@ -8,3 +8,6 @@ dependencies:
   M5GFX:
     version: develop
     git: https://github.com/m5stack/M5GFX.git
+
+  BME68x-Sensor-API:
+    path: ../component/BME68x-Sensor-API

@@ -1,23 +1,29 @@
 dependencies:
+  BME68x-Sensor-API:
+    component_hash: null
+    source:
+      path: /home/user/proj/m5atoms3_bme688/component/BME68x-Sensor-API
+      type: local
+    version: '*'
   M5GFX:
-    component_hash: c7825e0899fc5d11c7e93ca31e8722c44c5d6e3800fc4fd7520ac5eb3fc0676a
+    component_hash: 80c36ec3747becaac9c8e62e4533525f8d5620a52fbf5585393c1a2429157d51
     source:
       git: https://github.com/m5stack/M5GFX.git
       path: .
       type: git
-    version: 61e708a91a62aea62b37fca8ccdfb0e5dc7775f8
+    version: a94e9f2e97b79b6a59b23d6a739e2f6a2e71d538
   M5Unified:
-    component_hash: 3c6ada9aeef0b9ed360796ada6bc85a843b491f428af80d9fa7915517494d61d
+    component_hash: 59a059443571fca8b1df9eca6eb23c3bc2f4cd81b6c9322f8ee34ebf4df14664
     source:
       git: https://github.com/m5stack/M5Unified.git
       path: .
       type: git
-    version: 2d5a3f376ba9fa704cf18a8510f4d8d566f0fe18
+    version: fd8d770ad53d5cd3f0e50be08fb626c0bce00af3
   idf:
     component_hash: null
     source:
       type: idf
     version: 5.1.1
-manifest_hash: f99a4e010325d6c1b3c0f14b67c1dd0c13394d38263214d8c7fd930adc870fc4
+manifest_hash: 6fc653f484c038ede012d881e32d5f7587fe48ae2ec2994cdf639f3af1f9ed13
 target: esp32s3
 version: 1.0.0
