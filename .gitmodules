@@ -1,3 +1,0 @@
-[submodule "component/BME68x-Sensor-API/src"]
-	path = component/BME68x-Sensor-API/src
-	url = git@github.com:boschsensortec/BME68x-Sensor-API
