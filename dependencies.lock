@@ -1,4 +1,10 @@
 dependencies:
+  BME68x-Sensor-API:
+    component_hash: null
+    source:
+      path: /home/user/proj/m5atoms3_bme688/component/BME68x-Sensor-API
+      type: local
+    version: '*'
   M5GFX:
     component_hash: 80c36ec3747becaac9c8e62e4533525f8d5620a52fbf5585393c1a2429157d51
     source:
@@ -18,6 +24,6 @@ dependencies:
     source:
       type: idf
     version: 5.1.1
-manifest_hash: f99a4e010325d6c1b3c0f14b67c1dd0c13394d38263214d8c7fd930adc870fc4
+manifest_hash: 6fc653f484c038ede012d881e32d5f7587fe48ae2ec2994cdf639f3af1f9ed13
 target: esp32s3
 version: 1.0.0
