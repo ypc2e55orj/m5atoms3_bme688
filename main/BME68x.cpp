@@ -161,7 +161,7 @@ public:
 
   ~BME68xImpl() = default;
 
-  void delay(uint32_t period)
+  void delay_us(uint32_t period)
   {
     dev_.delay_us(period, reinterpret_cast<void *>(this));
   }
@@ -216,7 +216,6 @@ public:
 
   bme68x_data *get_data(uint8_t &n_data)
   {
-    delay(get_meas_dur());
     if (!bme68x_check("bme68x_get_data()", bme68x_get_data(mode_, data_, &n_data, &dev_)))
     {
       return nullptr;

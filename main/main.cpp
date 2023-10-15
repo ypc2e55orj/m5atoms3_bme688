@@ -7,7 +7,7 @@
 [[noreturn]] static void mainTask(void *)
 {
   M5Canvas canvas(&M5.Display);
-  BME68x bme688(I2C_NUM_1, GPIO_NUM_38, GPIO_NUM_39, 0x76, 400'000, pdMS_TO_TICKS(10));
+  BME68x bme688(I2C_NUM_1, GPIO_NUM_38, GPIO_NUM_39, 0x76, 1000'000, pdMS_TO_TICKS(10));
 
   bme688.set_op_mode(BME68X_PARALLEL_MODE);
 
@@ -37,7 +37,7 @@
   auto xLastWakeTime = xTaskGetTickCount();
   while (true)
   {
-    vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(10));
+    vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(bme688.get_meas_dur() / 1000 + heatr_conf.shared_heatr_dur));
     M5.update();
     canvas.createSprite(width, height);
     canvas.setTextColor(WHITE, BLACK);
